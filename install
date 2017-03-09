@@ -4,7 +4,7 @@ git clone https://github.com/Rondoozle/tgl
 cd tgl
 git clone https://github.com/vysheng/tl-parser
 cd
-cd JoveV6.7
+cd hesammarketing
 chmod +x launch.sh
 chmod +x jove
 ./launch.sh install
