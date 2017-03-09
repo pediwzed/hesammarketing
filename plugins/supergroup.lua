@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 |##########################################################################################|
 |   _______________   #   _______________   #    _______________   #P     _____________    |
 |  |   ____________|  #  |    ________   \  #   |    ________   \  #O    /   _______   \   |
@@ -67,7 +67,7 @@ local function check_member_super(cb_extra, success, result)
       end
       data[tostring(groups)][tostring(msg.to.id)] = msg.to.id
       save_data(_config.moderation.data, data)
-	  local text = "🎖نام گروه🎖 : <code>"..msg.to.title.."</code> \n🎖به لیست گروه های ربات افزوده شد توسط : @"..msg.from.username.." 🎖 <code>\n  🎖ورژن 6.7 ژوپیتر(مارشمالو)🎖 </code>"
+	  local text = "🎖نام گروه🎖 : <code>"..msg.to.title.."</code> \n🎖به لیست گروه های ربات افزوده شد توسط : @"..msg.from.username.." 🎖 <code>\n حسام مارکتینگ </code>"
       return reply_msg(msg.id, text, ok_cb, false)
     end
   end
@@ -95,7 +95,7 @@ local function check_member_superrem(cb_extra, success, result)
       end
       data[tostring(groups)][tostring(msg.to.id)] = nil
       save_data(_config.moderation.data, data)
-	  local text = "🎖نام گروه🎖 : <code>"..msg.to.title.."</code> \n🎖ازلیست گروه های ربات حذف شد توسط : @"..msg.from.username.." 🎖 <code> 🎖ورژن 6.7 ژوپیتر(مارشمالو)🎖 </code>"
+	  local text = "🎖نام گروه🎖 : <code>"..msg.to.title.."</code> \n🎖ازلیست گروه های ربات حذف شد توسط : @"..msg.from.username.." 🎖 <code> 🎖 حسام مارکتینگ 🎖 </code>"
       return reply_msg(msg.id, text, ok_cb, false)
     end
   end
@@ -1063,9 +1063,9 @@ function show_supergroup_settingsmod(msg, target)
 .."🎖#عمومی بودن گروه: "..settings.public.."\n"
 .."🎖#تنظیمات سختیگرانه: "..settings.strict.."\n"
 .."🎖#نوع گروه : سوپرگروه\n"
-.."🎖#نام ربات: ژوپتیر(Jove)\n"
-.."🎖#ورژن ربات: 6.7\n"
-.."🎖#کانال: @JoveCH\n\n"
+.."🎖#نام ربات: حسام مارکتینگ(Jove)\n"
+.."🎖#ورژن ربات: 1.0\n"
+.."🎖#کانال: @YooSms\n\n"
 .."⚓️مشخصات درخواست کننده⚓️\n"
 .."🎖#نام کامل : "..msg.from.first_name.." "..(msg.from.last_name or '').."\n"
 .."🎖#نام کاربری : @"..(msg.from.username or '')
@@ -1742,7 +1742,7 @@ if matches[1]:lower() == 'setexpire' then
 		if matches[1] == "مالک" then
 			local group_owner = data[tostring(msg.to.id)]['set_owner']
 			if not group_owner then
-				return "🎖هیچ مالکی پیدا نشد.برای تعیین مالک به یکی از مدیران ربات اطلاع دهید=> @JoveTGBot 🎖"
+				return "🎖هیچ مالکی پیدا نشد.برای تعیین مالک به یکی از مدیران ربات اطلاع دهید=> @HesamMarketing_Bot 🎖"
 			end
 			--savelog(msg.to.id, name_log.." ["..msg.from.id.."] used /owner")
 			return "🎖مالک سوپرگروه=> ["..group_owner..']'
